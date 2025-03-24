@@ -1,1 +1,37 @@
 
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+function myFunction()
+{
+    alert("余老师你好！");
+}
+</script>
+<script>
+    function changeColor() {
+        document.body.style.backgroundColor = "lightblue";
+    }
+</script>
+</head>
+<body>
+<center><input type="button" onclick="myFunction()" value="弹出一个对话框">
+<button onclick="changeColor()">Change Color</button>
+<div id="time"></div>
+    <script>
+         function getTime() {
+            var date = new Date();
+            var year = date.getFullYear();
+            var month = date.getMonth() + 1;
+            var day = date.getDate();
+            var hour = date.getHours();
+            var minute = date.getMinutes();
+            var second = date.getSeconds();
+            var element = document.getElementById('time');
+            element.innerHTML = '<h1>' + year + '-' + month + '-' + day + ' ' + hour + ':' + minute + ':' + second;
+        }
+        setInterval('getTime()', 1000);
+    </script>
+</center></body>
+</html>
