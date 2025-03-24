@@ -1,24 +1,35 @@
-
 <html>
-    <HEAD>
-    </HEAD>
-    <BODY>
+    <head>
+        <style>
+            .center {
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                padding: 20px;
+                border: lpx solid greenyellow;
+            }
+        </style>
+    </head>
+    <BODY bgcolor="# 00AA66">
         <center><b>申请表</b></center>
-        <form action="https://hyt12498.github.io/hyt.github.io/">
-        姓名:<br>
-        <INPUT type="text" name="name" value="" size="10" readonly="true">
-        <BR>感兴趣的职位:</BR>
-        <input type="radio" name="job" value="Web1">Web设计人员
-        <input type="radio" name="job" value="Web2">Web管理人员
-        <input type="radio" name="job" value="Web3">Web开发人员
-        <BR>其他要求:</BR>
-        <textarea rows="10" cols="50" name="textarea"></textarea>
-        <input type="button" name="name" value="" onclick="get">确认发送消息<br>
-        <p>经验</p>
-        <input type="checkbox" name="name" value="有经验">有经验
-        <input type="checkbox" name="name" value="无经验">无经验
-        <input type="submit" name="name" value="提交">
-        <input type="reset" name="name" value="重置">
-    </form>
+        <form class="center">
+            姓名:
+            <INPUT type="text" name="name" value="" size="10" readonly="true">
+            <p>感兴趣的职位:</p>
+            <input type="radio" name="job" value="Web1">Web设计人员
+            <input type="radio" name="job" value="Web2">Web管理人员
+            <input type="radio" name="job" value="Web3">Web开发人员
+            <p>其他要求:</p>
+            <textarea rows="10" cols="50" name="textarea"></textarea><br>
+            <input type="button" name="name" value="">确认发送消息<br>
+            <br>经验
+            <select name="name">
+            <option value="有经验">有经验</option>
+            <option value="无经验"select>无经验</option>
+            </select>
+            <center>
+            <input type="submit" name="name" value="提交">
+            <input type="reset" name="name" value="重置"></center>
+        </form>
     </BODY>
 </html>
